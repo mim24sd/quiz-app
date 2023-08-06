@@ -1,1 +1,20 @@
 @import "./src/assets/css/reset.css";
+
+/* .accordion {
+  --bs-accordion-active-bg: none !important;
+  --bs-accordion-btn-focus-border-color: none !important;
+  --bs-accordion-btn-focus-box-shadow: none !important;
+  --bs-accordion-border-width: 0;
+}
+
+.accordion-button {
+  background-color: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: none !important;
+}
+
+.accordion-button:focus {
+  border-color: none !important;
+} */
