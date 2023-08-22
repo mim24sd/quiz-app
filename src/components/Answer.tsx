@@ -2,7 +2,7 @@ import { Accordion } from "react-bootstrap";
 
 const Answer = () => {
   return (
-    <Accordion>
+    <Accordion className="py-4">
       <Accordion.Item eventKey="0">
         <Accordion.Header>Show Answer</Accordion.Header>
         <Accordion.Body>

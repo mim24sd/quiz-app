@@ -13,40 +13,16 @@ const Searchbar = (props: { placeholder: string }) => {
       <Row className="d-flex justify-content-end">
         <Col className="p-0">
           <Form className="d-flex">
-              <InputGroup.Text className="bg-white border border-end-0 rounded-end rounded-4 border-warning">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0px"
-                  y="0px"
-                  width="25"
-                  height="25"
-                  viewBox="0,0,256,256"
-                >
-                  <g
-                    fill="#a4a4a4"
-                    fill-rule="nonzero"
-                    stroke="none"
-                    stroke-width="1"
-                    stroke-linecap="butt"
-                    stroke-linejoin="miter"
-                    stroke-miterlimit="10"
-                    stroke-dasharray=""
-                    stroke-dashoffset="0"
-                    font-family="none"
-                    font-weight="none"
-                    font-size="none"
-                    text-anchor="none"
-                  >
-                    <g transform="scale(5.12,5.12)">
-                      <path d="M21,3c-9.37891,0 -17,7.62109 -17,17c0,9.37891 7.62109,17 17,17c3.71094,0 7.14063,-1.19531 9.9375,-3.21875l13.15625,13.125l2.8125,-2.8125l-13,-13.03125c2.55469,-2.97656 4.09375,-6.83984 4.09375,-11.0625c0,-9.37891 -7.62109,-17 -17,-17zM21,5c8.29688,0 15,6.70313 15,15c0,8.29688 -6.70312,15 -15,15c-8.29687,0 -15,-6.70312 -15,-15c0,-8.29687 6.70313,-15 15,-15z"></path>
-                    </g>
-                  </g>
-                </svg>
-              </InputGroup.Text>
-              <InputGroup>
+            <InputGroup.Text className="bg-white border border-end-0 rounded-end rounded-4 border-white">
+              <img
+                className="w-75"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADIklEQVR4nO1Zy04UQRQtF+rWjWJ8LNRPcOHbXzBRNCImRP0AE9RISEB34JKNyax6rHOqx0xcqBjWCm58/YEbt+IKI4iAbS7cTioTQdqu6oHJnKSTzjzOqVtV91G3jOmii62HJEn2A7hJ8gnJTyS/kfwlD4BZAB/lO2vtjTRNe8xWA8nzACYBLJHMNvPIbwG8BHCu3eM3jUbjGIApb3DLAN4AGLTWnrDW7qvVajvlkXcAJ0neITktv/UMe+WcO9oWI5xz/QC+60B+kBxrNpt7N/t/NWwcwLxyzAHoM1UCwKi3Ck/r9frBElyHADQ9vpGwo10HAB6q4G95z7JshwkAALdJrlRijHOuX2duBUBvBP7LuTHOuasmomOv+oRz7n4UkbWVGcp9xlp7JIbAVO4TJiJkq+Y+A2AyeJ5Q4vlGo3HYRIYED42EmXPubDBimRld7rFgpP/WHFfNFyHLDsnCy0XyRFlonlmW8kbeSxOSvKXb6rWpGABmVHugNJkWgEI2GGR0xbTvqnYSgkyq2ExqJ1MxrLWn1U/elybTUjyr0j9ypGnaoyvytTQZgEU1ZJepGBMTE7vVkJ8dYQjJuU7ZWp+DObscioKMrpj2GdWe6ZTwWytNps0E2afTQUZXTPutal8Msk/zEiVIqVCwRAGwlCTJniCk0u3QJR4PQrg5zUeq2QxG6pw7pUu80IYy/nhQ8ryUlxkKdU7/G4Sb5DPVeh5cQI6dkphUYMhEAoBh1ZhN0/RALJG+vPkgjYII/Ffy5gPJC6H5W8VGvE7KUIhtpuf0Yc8Imah+ExueMas+I022/+WS4JH7REtvWE6H10xsSN/J85l5Cc1F8ozmCQmxC17L1O8H573k+G1UCQBeYyKfxWkpLeRQJMlUqmZ55F0+A3BPaid/0NJiEseWFWibMQJp2Ui3o+C1wiIA11qMrmeMi9V53GC7DJCsk/yglzuLmty+AHgH4LEMaqNjgaxA240JBQnvaFlh3WbXTacY46oIzaHhOskYAL0dbwyrSJoxjOHadXfXmO0QAEbNdoS19pK3zR6Y7QysBYBqrrO76MKs4g/FURqJDOxuiQAAAABJRU5ErkJggg=="
+              />
+            </InputGroup.Text>
+            <InputGroup>
               <FormControl
                 type="search"
-                className=" border border-start-0 rounded-start rounded-4 border-warning"
+                className=" border rounded rounded-4 border-warning"
                 placeholder={props.placeholder}
               />
             </InputGroup>

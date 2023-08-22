@@ -1,8 +1,6 @@
 import { createElement } from "react";
 import { createRoot } from "react-dom/client";
 
-import "bootstrap/dist/css/bootstrap.min.css";
-
 import Header from "./components/Header";
 import QuestionList from "./components/QuestionList";
 import Container from "react-bootstrap/Container";
@@ -15,17 +13,17 @@ const App = () => {
   return (
     <Container fluid className=" vh-100">
       <Row className="shadow-sm p-3 bg-white rounded">
-      <Header/>
-      <Container className="w-50" >
-        <Searchbar  placeholder="Type a question..." />
-      </Container>
+        <Header />
+        <Container className="w-50">
+          <Searchbar placeholder="Type a question..." />
+        </Container>
       </Row>
       <Row>
         <Col sm={3} className="p-0">
           <Sidebar />
         </Col>
-        <Col sm={9}>
-          <QuestionList/>
+        <Col sm={9} className="question-background">
+          <QuestionList />
         </Col>
       </Row>
     </Container>
